@@ -1,0 +1,47 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",         //Onde vai estar os arquivos ts
+    "outDir": "./dist",         //Onde vai ser gerado os arquivos js
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    // "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    // "declaration": true,      //Faz o TypeScript gerar arquivos de declaração .d.ts.
+    // "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,     //deixa o TypeScript mais cuidadoso ao acessar elementos de arrays e objetos por índice/chave.
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    "noImplicitReturns": true,       //Faz o TypeScript verificar se todas as possibilidades de uma função retornam um valor, quando isso é esperado
+    // "noImplicitOverride": true,
+    "noUnusedLocals": true,           //Detecta variáveis declaradas que nunca são utilizadas.
+    "noUnusedParameters": true,        //Detecta parâmetros de funções que nunca são utilizados
+    "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    // "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    "removeComments": true,       //Não passa os comentários para o arquivo js
+    "noEmitOnError": true,        //Não compila com erros de ts para js
+  }
+}
