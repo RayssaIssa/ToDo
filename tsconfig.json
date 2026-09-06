@@ -17,7 +17,7 @@
 
     // Other Outputs
     "sourceMap": true,
-    // "declaration": true,      //Faz o TypeScript gerar arquivos de declaração .d.ts.
+    // "declaration": true,         //Faz o TypeScript gerar arquivos de declaração .d.ts.
     // "declarationMap": true,
 
     // Stricter Typechecking Options
